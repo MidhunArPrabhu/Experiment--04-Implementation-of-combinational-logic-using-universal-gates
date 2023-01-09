@@ -40,28 +40,28 @@ RegisterNumber: 22008311
 
 ### USING NAND OPERATION :
 
-module fourexp(A,B,C,D,F);
-input A,B,C,D;
-output F;
-wire P,Q,R;
-assign P = C&(~B)&(~A);
-assign Q = D&(~C)&(~A);
-assign R = (~C)&B&(~A);
-assign F = (~P&~Q&~R);
-endmodule
+module fourexp(A,B,C,D,F);  
+input A,B,C,D;  
+output F;  
+wire P,Q,R;  
+assign P = C&(~B)&(~A);  
+assign Q = D&(~C)&(~A);  
+assign R = (~C)&B&(~A);  
+assign F = (~P&~Q&~R);  
+endmodule  
 
 ### USING NOR OPERATION :
 
-module fourexp(A,B,C,D,F);
-input A,B,C,D;
-output F;
-wire P,Q,R,S;
-assign P = C&(~B)&A;
-assign Q = D&(~C)&A;
-assign R = C&(~B)&A;
-assign S = ~(P|Q|R);
-assign F = ~S;
-endmodule
+module fourexp(A,B,C,D,F);  
+input A,B,C,D;  
+output F;  
+wire P,Q,R,S;  
+assign P = C&(~B)&A;  
+assign Q = D&(~C)&A;  
+assign R = C&(~B)&A;  
+assign S = ~(P|Q|R);  
+assign F = ~S;  
+endmodule  
 
 ## OUTPUT :
 
@@ -74,7 +74,6 @@ endmodule
 ### TIMING DIAGRAM : 
 
 ![Screenshot_20230109_082920](https://user-images.githubusercontent.com/118054670/211349341-9250c3ad-8585-49b0-8872-4f82b6663c1e.png)
-![192572747-c981f4d7-4efe-45a1-b530-e5f3a4f701c0](https://user-images.githubusercontent.com/118054670/211349891-b36be638-bf19-49da-aa7c-f506e4936413.png)
 
 ### TRUTH TABLE :
 
