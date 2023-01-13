@@ -45,7 +45,7 @@ Developed by: MIDHUN AZHAHU RAJA P
 RegisterNumber: 22008311
 
 ### USING NAND OPERATION :
-
+```
 module fourexp(A,B,C,D,F);  
 input A,B,C,D;  
 output F;  
@@ -55,9 +55,9 @@ assign Q = D&(~C)&(~A);
 assign R = (~C)&B&(~A);  
 assign F = (~P&~Q&~R);  
 endmodule  
-
+```
 ### USING NOR OPERATION :
-
+```
 module fourexp(A,B,C,D,F);  
 input A,B,C,D;  
 output F;  
@@ -68,7 +68,7 @@ assign R = C&(~B)&A;
 assign S = ~(P|Q|R);  
 assign F = ~S;  
 endmodule  
-
+```
 ## OUTPUT :
 
 ### FOR NAND :
